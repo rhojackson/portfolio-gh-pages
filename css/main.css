@@ -1,0 +1,498 @@
+/*
+beige rgb(205,198,180)
+mauve rgb(133,121,119)
+dusty rose  
+purple rgb(54,26,47)*/
+
+/*******************
+general styles
+********************/
+* { 
+	box-sizing: border-box;
+ }
+
+h1{
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+	color: white;
+	letter-spacing: .09em;
+	text-align: center;
+}
+
+h2,h3{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	color: white;
+}
+
+p {
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+}
+
+.blur{
+	-webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px);
+	
+}
+/*******************
+Heading & Nav
+********************/
+
+#home{
+	margin-bottom: 100px;
+}
+
+.brandImg {
+	width: 5%;
+	margin-top: 5px;
+}
+
+/*display on scroll away from top*/
+.navbar-brand{
+	float: none;
+	display: none;
+}
+
+.navbar-brand > img {
+	display: inline-block;
+}
+
+
+.hero{
+	padding-top: 50px;
+	padding-bottom: 100px;
+	background: url(../images/pexels-photo_blur.jpg) no-repeat center center;
+	background-size: cover;
+	overflow: hidden;
+}
+
+/*remove class on scroll away from top*/
+.navbar-default-top, .navbar-default .navbar-nav > li > a{
+	background-color: rgba(0,0,0,0);
+	border: rgba(0,0,0,0);
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	letter-spacing: .15em;
+}
+
+.scrollNav{
+	background-color: rgba(54,26,47,.87);
+	padding: .5% 0;
+	-webkit-box-shadow: 0px 11px 40px -3px rgba(0,0,0,.8);
+	-moz-box-shadow: 0px 11px 40px -3px rgba(0,0,0,.8);
+	box-shadow: 0px 11px 40px -3px rgba(0,0,0,.8);
+
+}
+
+.greeting{
+	margin-top: 100px;
+}
+
+.lead {
+	color: white;
+}
+.whiteCircleBackground{
+	background-color: white;
+	border-radius: 50%;
+}
+
+
+/*********
+hamburger
+************/
+
+.hamburger{
+	font-size: 3em;
+	vertical-align: middle;
+}
+.navbar-default .navbar-toggle{
+	border: none;
+}
+
+/*******************
+Portfolio
+********************/
+
+.heroPort{
+	padding-top: 50px;
+	padding-bottom: 0px;
+}
+
+#portfolio{
+	background-color: rgb(220,220,220);
+	padding-top: 50px;
+}
+
+.grid-item-content {
+  	margin-bottom: 10px;
+  	margin-right: 10px;
+  	height: 400px;
+}
+
+
+.full{
+	background: no-repeat center center;
+	background-size: cover;
+	overflow: hidden;
+	border-radius: 8px;
+}
+
+.landscape{
+	height: 400px;
+}
+
+
+.image44{
+	display: none;
+}
+
+.spot a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+/*.additionalpages{
+	display: hidden;
+}*/
+/***********************
+portfolio preview bar
+**********************/
+
+#portfolioBar {
+	background-color: rgba(113,80,84,.87);
+	padding: 0 0 40px 0;
+	-webkit-box-shadow: 0px 0px 15px 3px rgba(115,115,115,1);
+	-moz-box-shadow: 0px 0px 15px 3px rgba(115,115,115,1);
+	box-shadow: 0px 0px 15px 3px rgba(115,115,115,1);
+	margin-bottom: 50px;
+}
+
+.viewWork{
+	color: rgba(113,80,84,.87);
+	text-align: center;
+	z-index: 5;
+	position: relative;
+	top: 175px;
+	background-color: white;
+	padding: 10px;
+
+	/*border-top: 2px double white;
+	border-bottom: 2px double white;*/
+}
+
+
+
+/*******************
+About Me
+********************/
+
+#aboutMe h1{
+	color: rgb(54,26,47); 
+	margin-bottom: 80px;
+}
+
+#aboutMe p{
+	color: rgb(46,46,46);
+}
+#aboutMe{
+	background: url(../images/crossword.png) repeat;
+	padding-top: 50px;
+}
+
+.headshot {
+	width: 100%;
+	border-radius: 8px;
+}
+
+.bio{
+	margin-top: 350px;
+}
+
+/**
+skills
+**/
+
+.skills { 
+	height: 100px;
+	border: 5px solid rgba(113,80,84,.87);
+	
+}
+#aboutMe .grid-item,#aboutMe .grid-sizer { 
+	width: 25%; 
+}
+
+.skillSection{
+	background-color: rgba(113,80,84,.87);
+	border-radius: 8px;
+	padding: 15px;
+	-webkit-box-shadow: 0px 0px 40px 1px rgba(46,46,46,1);
+	-moz-box-shadow: 0px 0px 40px 1px rgba(46,46,46,1);
+	box-shadow: 0px 0px 40px 1px rgba(46,46,46,1);
+}
+
+#html5{
+	background: url(../images/skillIcons/html5.png) no-repeat center center;
+	background-size: contain;
+	background-color: white;
+	border-radius: 10px;
+}
+
+#css3{
+	background: url(../images/skillIcons/css3.png) no-repeat center center;
+	background-size: 78%;
+	background-color: white;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+#js{
+	background: url(../images/skillIcons/js.png) no-repeat center center;
+	background-size: 110%;
+	background-color: white;
+	border-radius: 10px;
+}
+
+#jquery{
+	background: url(../images/skillIcons/jquery.png) no-repeat center center;
+	background-size: contain;
+	background-color: white;
+	border-radius: 10px;
+}
+
+#bs{
+	background: url(../images/skillIcons/bootstrap.png) no-repeat center center;
+	background-size: contain;
+	background-color: white;
+	border-radius: 10px;
+}
+
+#ai{
+	background: url(../images/skillIcons/illustrator.png) no-repeat center center;
+	background-size: 90%;
+	background-color: white;
+	border-radius: 10px;
+}
+
+#ps{
+	background: url(../images/skillIcons/photoshop.png) no-repeat center center;
+	background-size: contain;
+	background-color: white;
+	border-radius: 10px;
+}
+
+#id{
+	background: url(../images/skillIcons/indesign.png) no-repeat center center;
+	background-size: 90%;
+	background-color: white;
+	border-radius: 10px;
+}
+
+.slideDown{
+	height: 200px;
+	display: none;
+	
+}
+
+.resumeTitle{
+	text-align: center;
+	color: #333;
+	margin-top: 0;
+
+}
+
+.resumeImg{
+	width: 75%;
+	margin: 0 auto;
+	background-color: rgba(54,26,47,.87);
+	border-radius: 10px;
+	padding: 3%;
+
+}
+
+small a{
+	color: rgba(113,80,84,.87);
+}
+/*******************
+Contact Me
+********************/
+
+#contactMe{
+	background: url(../images/IMG_1126_blur.jpg) no-repeat center center;
+	background-size: cover;
+	overflow: hidden;
+
+}
+
+#contactMe h1{
+	margin-bottom: 60px;
+	text-shadow: 3px 3px 5px rgba(150, 150, 150, 1);
+
+}
+
+#contactMe span{
+	color: white;
+	font-family: 'Playfair Display', serif;
+	font-weight: 900;
+	display: block;
+	font-size: 1.5em;
+	padding-top: 10px;
+	text-shadow: 3px 3px 5px rgba(150, 150, 150, 1);
+
+}
+
+#contactMe h4 {
+	text-align: center;
+	color: white;
+	font-weight: 300;
+	line-height: 130%;
+	vertical-align: middle;
+	display: inline-block;
+	text-shadow: 3px 3px 5px rgba(150, 150, 150, 1);
+}
+
+.btn{
+	background-color:rgb(113,80,84);
+	color: white;
+	-webkit-box-shadow: 0px 2px 40px 1px rgba(0,0,0,1);
+	-moz-box-shadow: 0px 2px 40px 1px rgba(0,0,0,1);
+	box-shadow: 0px 2px 40px 1px rgba(0,0,0,1);
+
+}
+
+/*******************
+footer
+********************/
+
+footer {
+	background-color: rgba(54,26,47,.87);
+	margin-top: 15px;
+	margin-bottom: -15px;
+	padding: 1.8% 0;
+		-webkit-box-shadow: 0px -11px 40px -3px rgba(0,0,0,.8);
+	-moz-box-shadow: 0px -11px 40px -3px rgba(0,0,0,.8);
+	box-shadow: 0px -11px 40px -3px rgba(0,0,0,.8);
+
+}
+
+/*.socialMedia {
+	float: left;
+	width: 25%;
+
+}*/
+
+footer p{
+	float:left;
+	width: 100%;
+}
+
+footer img:not(:last-child) {
+	margin-right: 3%;
+}
+
+.portfolioFoot{
+	margin-top: 0;
+}
+
+/*******************
+preloader
+********************/
+body {
+    overflow: hidden;
+}
+
+/* Preloader */
+
+#preloadscreen {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#fff; /* change if the mask should have another color then white */
+    z-index:999; /* makes sure it stays on top */
+}
+
+#status {
+    width:200px;
+    height:200px;
+    position:absolute;
+    left:50%; /* centers the loading animation horizontally one the screen */
+    top:50%; /* centers the loading animation vertically one the screen */
+    background-image:url(../images/loading.gif); /* path to your loading animation */
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:-100px 0 0 -100px; /* is width and height divided by two */
+}
+
+/*******************
+media queries
+********************/
+
+@media (max-width: 992px){
+	.slideDown{
+		float: none;
+	}
+	.copyRight{
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	.logo{
+		text-align: center;
+	}
+
+	.whiteCircleBackground{
+		width: 50%;
+		display: inline-block;
+	}
+
+	#home{
+		margin-bottom: 10px;
+	}
+	.hero{
+		padding-bottom: 20px;
+		padding-top: 70px;
+	}
+
+	.greeting{
+		margin-top: 60px;
+		text-shadow: 3px 3px 5px rgba(150, 150, 150, 1);
+	}
+
+	.resumeImg{
+		width: 50%;
+	}
+	
+	nav .whiteCircleBackground{
+		width: 7%;
+		display: inline-block;
+	}
+
+	.skillSection{
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+
+	.navbar-default .navbar-toggle .icon-bar{
+		background-color: white;
+	}
+
+.socMedia{
+		margin-bottom: 30px;
+	}
+
+}
+
+/*******************
+Animation
+********************/
+
+
+
